@@ -1,4 +1,4 @@
-"""v1 の画面部品を再編集する。元 worktree・音声・再生エンジンは変更しない。"""
+"""v1 の画面部品を再編集。元 worktree・元音声・再生エンジンは変更しない。"""
 from pathlib import Path
 from copy import deepcopy
 import json, re, subprocess, shutil
@@ -378,6 +378,15 @@ for i,(el,name) in enumerate(zip(board.select('.eb'),names)):
 board.select_one('.eb-note').string='対話に集中し、少人数で売上を拡大'
 board.select_one('.eb-note')['data-in']='4.0';add(s)
 
+# 追加指示: 4321版のオープニングとエンディングを採用。
+# 参照版を毎回読み直さず、取り込み時のスナップショットで再現する。
+reference=json.loads((ROOT/'_docs/reference_4321/snapshot.json').read_text())
+new=[s for s in new if 16.96<=float(s['data-start'])<220.1]
+for raw in reference['scenes']:
+    s=html(raw);cls(s,'reference-bookend')
+    if float(s['data-end'])==17:s['data-end']='16.96'  # 中間の開始は動かさない。
+    add(s)
+
 # 時系列DOMにまとめる。サイドバーは旧エンジンが生成し、通常画面はその右に置く。
 frame=doc.select_one('#frame');app=frame.select_one('.app').extract()
 app.select_one('.app-main').clear();frame.clear();frame.append(app)
@@ -403,6 +412,9 @@ js=re.sub(r'const CH = \[.*?\n  \];','const CH = '+json.dumps(chap,ensure_ascii=
 js=re.sub(r'const CAPS = \[.*?\n  \];','const CAPS = '+json.dumps(caps,ensure_ascii=False).replace('\\','\\\\')+';',js,flags=re.S)
 script.string=js
 style=html('<style id="v2-styles"></style>');style.string=(ROOT/'_docs/video_v2.css').read_text();doc.select_one('style').insert_after(style)
+reference_style=html('<style id="reference-bookend-styles"></style>')
+reference_style.string=reference['css'];style.insert_after(reference_style)
+doc.select_one('#narr')['src']='narration-bookends.wav'
 out='<!doctype html>\n<html lang="ja">\n'+str(doc)+'\n</html>\n'
 (ROOT/'index.html').write_text(out)
 (ROOT/'_docs/scenes_codex_v2.json').write_text(json.dumps([dict(id=i,nav=s.get('data-nav'),start=float(s['data-start']),end=float(s['data-end'])) for i,s in enumerate(sorted(new,key=lambda s:float(s['data-start'])))],ensure_ascii=False,indent=2)+'\n')

@@ -1,0 +1,660 @@
+{
+  "errors": [],
+  "reference": [
+    {
+      "target": 1.8,
+      "time": 1.8,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 0,
+      "end": 9.7,
+      "diagram": false,
+      "logo": true,
+      "humanBars": 0,
+      "caption": ""
+    },
+    {
+      "target": 6.8,
+      "time": 6.799999,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 0,
+      "end": 9.7,
+      "diagram": false,
+      "logo": true,
+      "humanBars": 0,
+      "caption": ""
+    },
+    {
+      "target": 11,
+      "time": 11,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 9.7,
+      "end": 12.7,
+      "diagram": false,
+      "logo": false,
+      "humanBars": 0,
+      "title": "人が集中するのは、対話だけ。",
+      "caption": ""
+    },
+    {
+      "target": 15.9,
+      "time": 15.9,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 12.7,
+      "end": 17,
+      "diagram": true,
+      "logo": false,
+      "humanBars": 0,
+      "caption": "リスト作成から請求まで、ひとつのシステムで"
+    },
+    {
+      "target": 16.93,
+      "time": 16.93,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 12.7,
+      "end": 17,
+      "diagram": true,
+      "logo": false,
+      "humanBars": 0,
+      "caption": "リスト作成から請求まで、ひとつのシステムで"
+    },
+    {
+      "target": 17.2,
+      "time": 17.199999,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 17,
+      "end": 19.3,
+      "diagram": false,
+      "logo": false,
+      "humanBars": 0,
+      "title": "リード作成 〜 テレアポ準備",
+      "caption": "リスト作成から請求まで、ひとつのシステムで"
+    },
+    {
+      "target": 219.8,
+      "time": 219.800009,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 205.2,
+      "end": 220.1,
+      "diagram": false,
+      "logo": false,
+      "humanBars": 0,
+      "caption": "リスト作成から請求まで、ひとつのシステムで"
+    },
+    {
+      "target": 220.12,
+      "time": 220.119994,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 220.1,
+      "end": 232.2,
+      "diagram": true,
+      "logo": false,
+      "humanBars": 0,
+      "caption": "裏側はすべて、AIとシステムが。"
+    },
+    {
+      "target": 224.5,
+      "time": 224.499999,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 220.1,
+      "end": 232.2,
+      "diagram": true,
+      "logo": false,
+      "humanBars": 2,
+      "caption": "裏側はすべて、AIとシステムが。"
+    },
+    {
+      "target": 227.8,
+      "time": 227.800008,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 220.1,
+      "end": 232.2,
+      "diagram": true,
+      "logo": true,
+      "humanBars": 2,
+      "caption": "裏側はすべて、AIとシステムが。"
+    },
+    {
+      "target": 230,
+      "time": 229.999994,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 220.1,
+      "end": 232.2,
+      "diagram": true,
+      "logo": true,
+      "humanBars": 2,
+      "caption": "裏側はすべて、AIとシステムが。"
+    },
+    {
+      "target": 232.1,
+      "time": 232.100007,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 220.1,
+      "end": 232.2,
+      "diagram": true,
+      "logo": true,
+      "humanBars": 2,
+      "caption": "裏側はすべて、AIとシステムが。"
+    }
+  ],
+  "new": [
+    {
+      "target": 1.8,
+      "time": 1.8,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 0,
+      "end": 9.7,
+      "diagram": false,
+      "logo": true,
+      "humanBars": 0,
+      "caption": ""
+    },
+    {
+      "target": 6.8,
+      "time": 6.799999,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 0,
+      "end": 9.7,
+      "diagram": false,
+      "logo": true,
+      "humanBars": 0,
+      "caption": ""
+    },
+    {
+      "target": 11,
+      "time": 11,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 9.7,
+      "end": 12.7,
+      "diagram": false,
+      "logo": false,
+      "humanBars": 0,
+      "title": "人が集中するのは、対話だけ。",
+      "caption": ""
+    },
+    {
+      "target": 15.9,
+      "time": 15.9,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 12.7,
+      "end": 16.96,
+      "diagram": true,
+      "logo": false,
+      "humanBars": 0,
+      "caption": "リスト作成から請求まで、ひとつのシステムで"
+    },
+    {
+      "target": 16.93,
+      "time": 16.93,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 12.7,
+      "end": 16.96,
+      "diagram": true,
+      "logo": false,
+      "humanBars": 0,
+      "caption": "リスト作成から請求まで、ひとつのシステムで"
+    },
+    {
+      "target": 17.2,
+      "time": 17.199999,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 16.96,
+      "end": 19.31,
+      "diagram": false,
+      "logo": false,
+      "humanBars": 0,
+      "caption": "リスト作成から請求まで、ひとつのシステムで"
+    },
+    {
+      "target": 219.8,
+      "time": 219.800009,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 202.5,
+      "end": 220.1,
+      "diagram": false,
+      "logo": false,
+      "humanBars": 0,
+      "caption": "リスト作成から請求まで、ひとつのシステムで"
+    },
+    {
+      "target": 220.12,
+      "time": 220.119994,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 220.1,
+      "end": 232.2,
+      "diagram": true,
+      "logo": false,
+      "humanBars": 0,
+      "caption": "裏側はすべて、AIとシステムが。"
+    },
+    {
+      "target": 224.5,
+      "time": 224.499999,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 220.1,
+      "end": 232.2,
+      "diagram": true,
+      "logo": false,
+      "humanBars": 2,
+      "caption": "裏側はすべて、AIとシステムが。"
+    },
+    {
+      "target": 227.8,
+      "time": 227.800008,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 220.1,
+      "end": 232.2,
+      "diagram": true,
+      "logo": true,
+      "humanBars": 2,
+      "caption": "裏側はすべて、AIとシステムが。"
+    },
+    {
+      "target": 230,
+      "time": 229.999994,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 220.1,
+      "end": 232.2,
+      "diagram": true,
+      "logo": true,
+      "humanBars": 2,
+      "caption": "裏側はすべて、AIとシステムが。"
+    },
+    {
+      "target": 232.1,
+      "time": 232.100007,
+      "duration": 232.2,
+      "readyState": 4,
+      "sceneCount": 1,
+      "start": 220.1,
+      "end": 232.2,
+      "diagram": true,
+      "logo": true,
+      "humanBars": 2,
+      "caption": "裏側はすべて、AIとシステムが。"
+    }
+  ],
+  "playback": [
+    {
+      "time": 15.393315,
+      "paused": false,
+      "scenes": [
+        12.7
+      ]
+    },
+    {
+      "time": 15.646976,
+      "paused": false,
+      "scenes": [
+        12.7
+      ]
+    },
+    {
+      "time": 15.900073,
+      "paused": false,
+      "scenes": [
+        12.7
+      ]
+    },
+    {
+      "time": 16.153038,
+      "paused": false,
+      "scenes": [
+        12.7
+      ]
+    },
+    {
+      "time": 16.405858,
+      "paused": false,
+      "scenes": [
+        12.7
+      ]
+    },
+    {
+      "time": 16.661455,
+      "paused": false,
+      "scenes": [
+        12.7
+      ]
+    },
+    {
+      "time": 16.915315,
+      "paused": false,
+      "scenes": [
+        12.7
+      ]
+    },
+    {
+      "time": 17.168261,
+      "paused": false,
+      "scenes": [
+        16.96
+      ]
+    },
+    {
+      "time": 17.423108,
+      "paused": false,
+      "scenes": [
+        16.96
+      ]
+    },
+    {
+      "time": 17.677372,
+      "paused": false,
+      "scenes": [
+        16.96
+      ]
+    },
+    {
+      "time": 17.93077,
+      "paused": false,
+      "scenes": [
+        16.96
+      ]
+    },
+    {
+      "time": 18.184276,
+      "paused": false,
+      "scenes": [
+        16.96
+      ]
+    },
+    {
+      "time": 218.975281,
+      "paused": false,
+      "scenes": [
+        202.5
+      ]
+    },
+    {
+      "time": 219.228293,
+      "paused": false,
+      "scenes": [
+        202.5
+      ]
+    },
+    {
+      "time": 219.48123,
+      "paused": false,
+      "scenes": [
+        202.5
+      ]
+    },
+    {
+      "time": 219.734082,
+      "paused": false,
+      "scenes": [
+        202.5
+      ]
+    },
+    {
+      "time": 219.987038,
+      "paused": false,
+      "scenes": [
+        202.5
+      ]
+    },
+    {
+      "time": 220.240915,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 220.493533,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 220.746491,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 221.001589,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 221.244305,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 225.875336,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 226.127618,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 226.380771,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 226.634186,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 226.889733,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 227.145857,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 227.39918,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 227.652585,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 227.905738,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 228.160171,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 228.413954,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 228.659174,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 228.913655,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 229.167067,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 229.420842,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 229.67433,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 229.927049,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 230.180511,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 230.433767,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 230.687262,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 230.942745,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 231.19623,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 231.449332,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 231.703383,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 231.946645,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    },
+    {
+      "time": 232.2,
+      "paused": false,
+      "scenes": [
+        220.1
+      ]
+    }
+  ]
+}

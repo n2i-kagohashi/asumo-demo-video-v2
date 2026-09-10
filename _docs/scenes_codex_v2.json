@@ -3,18 +3,18 @@
     "id": 0,
     "nav": null,
     "start": 0.0,
-    "end": 9.68
+    "end": 9.7
   },
   {
     "id": 1,
     "nav": null,
-    "start": 9.68,
-    "end": 12.67
+    "start": 9.7,
+    "end": 12.7
   },
   {
     "id": 2,
-    "nav": "/list-build",
-    "start": 12.67,
+    "nav": null,
+    "start": 12.7,
     "end": 16.96
   },
   {
@@ -141,12 +141,6 @@
     "id": 23,
     "nav": null,
     "start": 220.1,
-    "end": 227.91
-  },
-  {
-    "id": 24,
-    "nav": null,
-    "start": 227.91,
     "end": 232.2
   }
 ]

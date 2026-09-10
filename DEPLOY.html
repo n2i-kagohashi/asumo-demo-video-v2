@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ASUMO 動画 v2 — デプロイ引き継ぎ</title>
+<style>
+body{font-family:'Inter','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;background:#f5f7f9;color:#24332f;line-height:1.8;margin:0;padding:36px 24px 80px}.wrap{max-width:900px;margin:auto}h1{font-size:28px}h2{font-size:20px;border-bottom:2px solid #1b3a6b;padding-bottom:8px;margin-top:34px}.toc,.callout{background:#fff;border:1px solid #dfe5e5;border-radius:10px;padding:16px 22px;margin:20px 0}.callout{border-left:5px solid #1b3a6b}.callout.ok{border-left-color:#2f9e44;background:#f1fbf3}.callout.warn{border-left-color:#e8590c;background:#fff6ed}code{background:#eaf0f1;padding:2px 5px;border-radius:4px}pre{background:#182d27;color:#e2f1e9;padding:18px;border-radius:8px;overflow:auto}a{color:#117e67}footer{margin-top:44px;color:#64766e;font-size:12px}
+</style></head><body><main class="wrap">
+<h1>ASUMO 動画 v2 — デプロイ引き継ぎ</h1>
+<div class="callout ok"><b>ビルドは不要です。</b> リポジトリ直下を静的サイトとして配信すれば、<code>index.html</code> から再生できます。</div>
+<nav class="toc"><b>目次</b><ol><li><a href="#source">取得元</a></li><li><a href="#settings">配信設定</a></li><li><a href="#check">公開後の確認</a></li></ol></nav>
+<h2 id="source">取得元</h2>
+<p>新作専用リポジトリ: <a href="https://github.com/n2i-kagohashi/asumo-demo-video-v2">github.com/n2i-kagohashi/asumo-demo-video-v2</a></p>
+<pre>git clone https://github.com/n2i-kagohashi/asumo-demo-video-v2.git
+cd asumo-demo-video-v2</pre>
+<p>公開中の旧版 <code>n2i-kagohashi/asumo-demo</code> とは別リポジトリです。旧版のブランチ・GitHub Pages設定は変更しないでください。</p>
+<h2 id="settings">配信設定</h2>
+<p>任意の静的ホスティングで、次の設定を使います。</p>
+<ul><li>Production branch: <code>main</code></li><li>Build command: なし</li><li>Publish directory: リポジトリ直下（<code>.</code>）</li><li>入口: <code>/index.html</code></li></ul>
+<div class="callout warn"><code>narration-bookends.wav</code> は約44.6MBです。音声シークのため、HTTP Rangeリクエストに <code>206 Partial Content</code> を返すホスティングを使用してください。</div>
+<h2 id="check">公開後の確認</h2>
+<pre>curl -I -H "Range: bytes=0-1023" \
+  https://公開URL/narration-bookends.wav</pre>
+<p><code>206 Partial Content</code> と <code>Accept-Ranges: bytes</code> を確認後、冒頭、16.96秒、220.10秒、末尾へシークして、映像と音声が続くことを確認します。</p>
+<p>ローカル確認は <code>python3 _docs/serve_video.py 4322</code> のあと、<code>http://127.0.0.1:4322/</code> を開きます。</p>
+<footer>株式会社N2i</footer>
+</main></body></html>

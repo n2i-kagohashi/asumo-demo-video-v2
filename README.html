@@ -6,12 +6,23 @@ body{font-family:'Inter','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;b
 </style></head><body><main class="wrap">
 <h1>ASUMO 営業ジャーニー — 新作 v2</h1>
 <p>既存動画を上書きせず、独立フォルダ・独立ブランチで制作した、音声付きHTML疑似動画です。MP4ではありません。</p>
-<div class="callout ok"><a href="index.html"><b>新作動画を開く</b></a> · 232.2秒（3分52秒） · 1440×810 / 16:9 · 25シーン · 9タイトル · 36字幕</div>
-<nav class="toc"><b>目次</b><ol><li><a href="#review">確認事項</a></li><li><a href="#edit">編集内容</a></li><li><a href="#source">入力と保全</a></li><li><a href="#check">検証</a></li><li><a href="#run">再生・再生成</a></li></ol></nav>
+<div class="callout ok"><a href="index.html"><b>新作動画を開く</b></a> · 232.2秒（3分52秒） · 1440×810 / 16:9 · 24シーン · 9章 · 36字幕</div>
+<nav class="toc"><b>目次</b><ol><li><a href="#bookends">追加修正：冒頭・エンディング</a></li><li><a href="#review">確認事項</a></li><li><a href="#edit">初回の編集内容</a></li><li><a href="#source">入力と保全</a></li><li><a href="#check">検証</a></li><li><a href="#run">再生・再生成</a></li></ol></nav>
+<h2 id="bookends">追加修正：4321版の冒頭・エンディングを採用</h2>
+<p>2026年9月10日の追加指示により、<code>http://localhost:4321/</code> の指定部分を新作へ移植しました。元動画のフォルダには書き込んでいません。</p>
+<table><thead><tr><th>区間</th><th>反映内容</th></tr></thead><tbody>
+<tr><td>冒頭 0〜16.96秒</td><td>ASUMOロゴ演出＋2文 →「人が集中するのは、対話だけ。」→ 11工程のガント型図。指定された「16秒まで」は、16秒台に続く図の終わりまでと解釈。参照版の17.00秒を、新作の次章に接続する16.96秒で終了する以外は、DOM・演出時刻をそのまま移植。</td></tr>
+<tr><td>中間 16.96〜220.10秒</td><td>前回版 <code>3d1498d</code> の20シーンを変更せず維持。CSS・JavaScript・字幕データも維持。音声はデコード後のPCM比較で完全一致。</td></tr>
+<tr><td>末尾 220.10〜232.20秒</td><td>11工程の図 → テレアポと商談の「人が話す」強調 → ASUMOロゴ。参照版の映像・音声をそのまま採用。</td></tr>
+</tbody></table>
+<p>音声は <code>narration-bookends.wav</code> に別名保存。指定された2区間だけ参照版に差し替え、無劣化で結合しました。既存の <code>narration.mp3</code> は保全。声の再生成・再読み上げ・無音の追加はありません。</p>
+<p>取り込み元の4シーン・局所化した追加CSS・音声2区間・SHA-256は <code>_docs/reference_4321/</code> に保存。今後元動画が更新されても、新作へ自動反映しない構成です。</p>
+<p>検証：中間20シーン・CSS・JavaScriptの変更前比較、参照4シーンの一致、音声3区間のPCM一致、24シーンの連続性・36字幕・全演出時刻を自動検査。ブラウザで参照版と新作を各12時点確認し、接続位置と末尾を1倍速で再生。<a href="_docs/qa/bookends.json">今回のブラウザ確認ログ</a>。</p>
+<p class="small">初回テストでは結合FLACの末尾シークで <code>PipelineStatus::PIPELINE_ERROR_READ: FFmpegDemuxer: demuxer seek failed</code> が発生。再生用を48kHz・16bit・ステレオの非圧縮WAV（約44.6MB）へ切り替えました。取り込み区間の保存用FLACはブラウザから再生しません。</p>
 <h2 id="review">確認事項 — 原稿生成・校了の画面</h2>
 <div class="callout warn"><b>No.39（185.69〜191.67秒）は映像が仮置きです。</b><br>台本は「AI原稿生成・校了までのステータス管理」を説明していますが、指定されたASUMO本体の <code>feat/issue-flow</code> の実装では、その画面を確認できませんでした。ボタンやステータスは創作せず、存在する「掲載を登録（原稿を制作）」→「入稿待ち」→「掲載開始」→「掲載中」→「請求へ」を映しています。音声・字幕は指定入力を変えず維持しています。<br><b>顧客向け公開前に、この部分の実装画面または台本の整合確認が必要です。</b></div>
 <p class="small">本体参照: <code>app/(main)/publication/page.tsx</code>、<code>app/components/IssuePanel.tsx</code>、<code>PaymentModal.tsx</code>、<code>DunningModal.tsx</code>、<code>app/(main)/outreach/OutreachWorkbench.tsx</code>。本体のコード・データ・サーバーは今回変更していません。</p>
-<h2 id="edit">編集内容</h2>
+<h2 id="edit">初回の編集内容（追加修正前）</h2>
 <table><thead><tr><th>項目</th><th>対応</th></tr></thead><tbody>
 <tr><td>旧動画の扱い</td><td><code>/Users/kagohashiyu-ki/work/asumo-demo</code> は変更対象外。新作は <code>/Users/kagohashiyu-ki/work/asumo-demo-video-v2</code>、ブランチ <code>feat/video-v2</code> に保存。</td></tr>
 <tr><td>新作から外した画面</td><td><code>/invoice</code> の請求一括発行、<code>/monthly</code> の月次レポート。台本に該当行がないため新作には入れていません。元動画・Git履歴には残っています。</td></tr>
@@ -28,11 +39,11 @@ body{font-family:'Inter','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;b
 <p>入力は開始時点のスナップショットに固定しました。元フォルダは他の作業で並行更新されていたため、制作中の変更を新作へ勝手に再取り込みしていません。</p>
 <table><thead><tr><th>入力</th><th>識別</th></tr></thead><tbody>
 <tr><td>画面部品・再生エンジン</td><td>元リポジトリのコミット <code>475de1f</code> の <code>index.html</code></td></tr>
-<tr><td>確定音声</td><td><code>narration.mp3</code>（232.200000秒）。元の <code>_audio/narration_v2.mp3</code> をコピー。SHA-256:<br><code style="word-break:break-all">45c4bee6cfba876167c01fc68c1bdb1a45111bd03d2971d63dc3821651d0ae20</code></td></tr>
+<tr><td>初回の確定音声（保全）</td><td><code>narration.mp3</code>（232.200000秒）。元の <code>_audio/narration_v2.mp3</code> をコピー。追加修正後の再生には、この音声の中間を使った <code>narration-bookends.wav</code> を使用。SHA-256:<br><code style="word-break:break-all">45c4bee6cfba876167c01fc68c1bdb1a45111bd03d2971d63dc3821651d0ae20</code></td></tr>
 <tr><td>確定台本</td><td><code>_audio/timeline_v2.json</code>（45行）。SHA-256:<br><code style="word-break:break-all">1dbc24e17d8237288741002044433e5815b39805cbb4924bd32c0a3a5fe2e9ba</code></td></tr>
 <tr><td>再生エンジン</td><td><code>TOTAL / CH / CAPS</code> のデータ差し替えのみ。それ以外のJavaScriptは元コミットと正規化比較で同一。タイトル・画面切り替え・波紋・タイプ演出は既存機構を使用。</td></tr>
 </tbody></table>
-<h2 id="check">検証</h2>
+<h2 id="check">初回の検証（追加修正分は冒頭を参照）</h2>
 <ul><li>JS構文、25シーンの昇順・隙間・重なり、最終時刻232.2秒を自動検査。</li><li>36字幕の本文・開始終了・読みを入力JSONと照合。タイトル行を字幕から除外。</li><li>全演出の相対秒、クリック、表示期間、タイプ／カウントの終了、フォーカス期間、画像存在・サイズ、必要なDOM IDを検査。</li><li>47時点のブラウザキャプチャを確認。スマホ選択・確定、CSV投入、割引承認、一部入金、督促履歴を確認。</li><li>HTTP Rangeは206 Partial Content。音声の前後シーク、一時停止、1 / 1.25 / 1.5 / 2倍速を確認。</li><li>1倍速の通し再生を自動確認。音声時刻、同時に出るシーン数、字幕の一致、最終到達を記録。</li></ul>
 <p>通し再生の後、通知文言を実装に合わせ、督促の保存後はモーダルを閉じて一覧の回数・最終連絡日を更新する形へ調整。変更した場面を追加で確認しました。390px・1280px・1920px幅の表示も確認しています。</p>
 <p><a href="_docs/qa/samples.json">47時点の場面確認ログ</a> / <a href="_docs/qa/final-delta.json">最終差分の確認ログ</a> / <a href="_docs/qa/full-playback.json">通し再生ログ</a> / <a href="_docs/scenes_codex_v2.json">シーン一覧</a></p>
@@ -44,7 +55,10 @@ python3 _docs/serve_video.py 4322
 <p>このPCの <code>localhost:4322</code> には別のIPv6サーバーがあるため、<b>127.0.0.1</b> を指定します。サーバーはループバックアドレスにのみ待ち受けます。</p>
 <pre># この新作のHTMLだけを再生成（元動画と音声は触らない）
 python3 _docs/build_codex_video.py
-python3 _docs/check_scenes.py</pre>
-<p>再生成にはPythonのBeautifulSoup、QAにはこのPCに導入済みのChrome／Playwrightを使用。動画自体は静的HTML・MP3・PNGのみです。GitHubへのpush、デプロイ、ASUMO本体への書き込みは行っていません。</p>
+python3 _docs/check_scenes.py
+python3 _docs/check_bookends.py
+# 結合音声を再生成する場合のみ（保全した元MP3は変更しない）
+python3 _docs/build_bookend_audio.py</pre>
+<p>再生成にはPythonのBeautifulSoup、音声の結合・検算にはFFmpeg、QAにはこのPCに導入済みのChrome／Playwrightを使用。動画自体は静的HTML・WAV・PNGで再生します。新作専用GitHubリポジトリへ納品し、実際のデプロイは行っていません。ASUMO本体への書き込みも行っていません。聖さん向けの公開手順は <a href="DEPLOY.html">DEPLOY.html</a> を参照してください。</p>
 <footer>株式会社N2i</footer>
 </main></body></html>
