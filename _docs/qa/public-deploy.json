@@ -1,0 +1,53 @@
+{
+  "errors": [],
+  "samples": [
+    {
+      "target": 1,
+      "t": 0.999999,
+      "scene": "title",
+      "start": "0.0",
+      "caption": "",
+      "over": []
+    },
+    {
+      "target": 15.9,
+      "t": 15.9,
+      "scene": "title",
+      "start": "12.7",
+      "caption": "リスト作成から請求まで、ひとつのシステムで",
+      "over": []
+    },
+    {
+      "target": 16.97,
+      "t": 16.97,
+      "scene": "title",
+      "start": "16.96",
+      "caption": "リスト作成から請求まで、ひとつのシステムで",
+      "over": []
+    },
+    {
+      "target": 220.12,
+      "t": 220.119994,
+      "scene": "title",
+      "start": "220.1",
+      "caption": "裏側はすべて、AIとシステムが。",
+      "over": []
+    },
+    {
+      "target": 224.5,
+      "t": 224.499999,
+      "scene": "title",
+      "start": "220.1",
+      "caption": "裏側はすべて、AIとシステムが。",
+      "over": []
+    },
+    {
+      "target": 230,
+      "t": 229.999994,
+      "scene": "title",
+      "start": "220.1",
+      "caption": "裏側はすべて、AIとシステムが。",
+      "over": []
+    }
+  ]
+}
