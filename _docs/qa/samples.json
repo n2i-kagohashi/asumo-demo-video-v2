@@ -1,0 +1,388 @@
+{
+  "errors": [],
+  "samples": [
+    {
+      "target": 1,
+      "t": 0.999999,
+      "scene": "title",
+      "start": "0.0",
+      "caption": "",
+      "over": []
+    },
+    {
+      "target": 6.5,
+      "t": 6.5,
+      "scene": "title",
+      "start": "0.0",
+      "caption": "",
+      "over": []
+    },
+    {
+      "target": 10.8,
+      "t": 10.8,
+      "scene": "title",
+      "start": "9.68",
+      "caption": "",
+      "over": []
+    },
+    {
+      "target": 15,
+      "t": 14.999999,
+      "scene": "/list-build",
+      "start": "12.67",
+      "caption": "リスト作成から請求まで、ひとつのシステムで",
+      "over": []
+    },
+    {
+      "target": 18,
+      "t": 18,
+      "scene": "title",
+      "start": "16.96",
+      "caption": "リスト作成から請求まで、ひとつのシステムで",
+      "over": []
+    },
+    {
+      "target": 22,
+      "t": 22,
+      "scene": "/list-build",
+      "start": "19.31",
+      "caption": "リードの作成からテレアポ準備まで",
+      "over": []
+    },
+    {
+      "target": 29.5,
+      "t": 29.499999,
+      "scene": "/list-build",
+      "start": "19.31",
+      "caption": "リードは外から探すか、いまある企業から選ぶか",
+      "over": []
+    },
+    {
+      "target": 36.5,
+      "t": 36.5,
+      "scene": "/list-build",
+      "start": "19.31",
+      "caption": "地域や業種、採用情報などからICP適合し、当たり先を絞ります",
+      "over": []
+    },
+    {
+      "target": 42.5,
+      "t": 42.5,
+      "scene": "/list-build",
+      "start": "19.31",
+      "caption": "条件に合致した企業が表示されリスト化されます",
+      "over": []
+    },
+    {
+      "target": 49.5,
+      "t": 49.499999,
+      "scene": "/list-build",
+      "start": "19.31",
+      "caption": "1社ごとに、会社の訴求ポイントをAIが判断します",
+      "over": []
+    },
+    {
+      "target": 55.9,
+      "t": 55.9,
+      "scene": "/list-import",
+      "start": "54.2",
+      "caption": "手元にあるリストは、貼るだけでリスト化されます",
+      "over": []
+    },
+    {
+      "target": 61.8,
+      "t": 61.800002,
+      "scene": "/outreach",
+      "start": "57.89",
+      "caption": "メールは1社ずつAIが訴求を書き分け、あなたのGmailから送信",
+      "over": []
+    },
+    {
+      "target": 67.5,
+      "t": 67.500002,
+      "scene": "/form-outreach",
+      "start": "63.44",
+      "caption": "といあわせフォームも、文面とURLはAIが用意。投稿は担当者",
+      "over": []
+    },
+    {
+      "target": 75,
+      "t": 75.000001,
+      "scene": "/teleapo",
+      "start": "72.06",
+      "caption": "メール・フォームの後は、テレアポへ",
+      "over": []
+    },
+    {
+      "target": 79.8,
+      "t": 79.8,
+      "scene": "/teleapo",
+      "start": "72.06",
+      "caption": "発信はワンクリック。終話も自動",
+      "over": [
+        "営業フォロー"
+      ]
+    },
+    {
+      "target": 86,
+      "t": 86,
+      "scene": "/teleapo",
+      "start": "72.06",
+      "caption": "会話は自動で文字起こし・要約",
+      "over": []
+    },
+    {
+      "target": 91,
+      "t": 90.999999,
+      "scene": "/teleapo",
+      "start": "72.06",
+      "caption": "会話の内容から、自動でフラグが立つ",
+      "over": []
+    },
+    {
+      "target": 96,
+      "t": 95.999999,
+      "scene": "/teleapo",
+      "start": "72.06",
+      "caption": "予算の時期やニーズも拾います",
+      "over": []
+    },
+    {
+      "target": 100,
+      "t": 99.999998,
+      "scene": "/teleapo",
+      "start": "72.06",
+      "caption": "通話中に人がやるのは、対話に集中すること",
+      "over": []
+    },
+    {
+      "target": 104.5,
+      "t": 104.500003,
+      "scene": "/teleapo",
+      "start": "72.06",
+      "caption": "架電結果はワンタップ。そのまま集計",
+      "over": []
+    },
+    {
+      "target": 109.7,
+      "t": 109.699998,
+      "scene": "/teleapo",
+      "start": "72.06",
+      "caption": "ヒアリングは、自動で埋まる",
+      "over": []
+    },
+    {
+      "target": 116.9,
+      "t": 116.900004,
+      "scene": "/outreach",
+      "start": "114.33",
+      "caption": "アポ獲得後の調整も、カレンダー連携で",
+      "over": [
+        "STEP2｜メール作成・送信\n宛先takahashi@logitech-buturyu.example.jp\n",
+        "宛先takahashi@logitech-buturyu.example.jp",
+        "本文ロジテック物流株式会社\n高橋 誠様\n\nお世話になっております。ネオキャリアの高橋 美咲です。\n本日はお電話",
+        "顧客向け調整URL（顧客がこのURLで枠を選択します）https://asumo.example/picker"
+      ]
+    },
+    {
+      "target": 120.5,
+      "t": 120.500001,
+      "scene": "/outreach",
+      "start": "114.33",
+      "caption": "候補日をそのまま送信",
+      "over": []
+    },
+    {
+      "target": 125.5,
+      "t": 125.5,
+      "scene": "/outreach",
+      "start": "114.33",
+      "caption": "お客様はスマホで選ぶだけ。ログイン不要",
+      "over": []
+    },
+    {
+      "target": 127.5,
+      "t": 127.5,
+      "scene": "/outreach",
+      "start": "114.33",
+      "caption": "お客様はスマホで選ぶだけ。ログイン不要",
+      "over": []
+    },
+    {
+      "target": 134,
+      "t": 134.000004,
+      "scene": "/proposal",
+      "start": "131.49",
+      "caption": "提案資料は、テレアポヒアリングと議事録から",
+      "over": []
+    },
+    {
+      "target": 139.7,
+      "t": 139.699995,
+      "scene": "/proposal",
+      "start": "131.49",
+      "caption": "クライアントに最適な、オリジナルの提案資料をAIが作成",
+      "over": []
+    },
+    {
+      "target": 144.8,
+      "t": 144.799997,
+      "scene": "title",
+      "start": "143.5",
+      "caption": "できあがった提案書（実物）",
+      "over": []
+    },
+    {
+      "target": 147.9,
+      "t": 147.9,
+      "scene": "title",
+      "start": "143.5",
+      "caption": "できあがった提案書（実物）",
+      "over": []
+    },
+    {
+      "target": 150.5,
+      "t": 150.499998,
+      "scene": "title",
+      "start": "143.5",
+      "caption": "できあがった提案書（実物）",
+      "over": []
+    },
+    {
+      "target": 154,
+      "t": 154.000002,
+      "scene": "/minutes2",
+      "start": "151.9",
+      "caption": "商談は録るだけ。議事録は瞬時に",
+      "over": []
+    },
+    {
+      "target": 156.8,
+      "t": 156.799996,
+      "scene": "/minutes2",
+      "start": "151.9",
+      "caption": "商談は録るだけ。議事録は瞬時に",
+      "over": []
+    },
+    {
+      "target": 160.5,
+      "t": 160.499996,
+      "scene": "/minutes2",
+      "start": "151.9",
+      "caption": "お礼のメールも、自動で",
+      "over": []
+    },
+    {
+      "target": 164.8,
+      "t": 164.799995,
+      "scene": "/proposal2",
+      "start": "162.65",
+      "caption": "2回目以降の資料も、議事録から",
+      "over": []
+    },
+    {
+      "target": 172,
+      "t": 172,
+      "scene": "/estimate",
+      "start": "168.97",
+      "caption": "見積書は、提案の時点でできている",
+      "over": []
+    },
+    {
+      "target": 176.8,
+      "t": 176.800004,
+      "scene": "/estimate",
+      "start": "168.97",
+      "caption": "大きな割引は、本人以外の承認へ",
+      "over": []
+    },
+    {
+      "target": 180.8,
+      "t": 180.800003,
+      "scene": "/contract",
+      "start": "178.36",
+      "caption": "合意した見積が、そのまま申込書に",
+      "over": []
+    },
+    {
+      "target": 184,
+      "t": 183.999999,
+      "scene": "/contract",
+      "start": "178.36",
+      "caption": "金額を打ち直す場所はありません",
+      "over": []
+    },
+    {
+      "target": 189.8,
+      "t": 189.799992,
+      "scene": "/publication",
+      "start": "185.69",
+      "caption": "掲載原稿はAIが作成、やりとりも校了までステータス管理します。",
+      "over": []
+    },
+    {
+      "target": 196.8,
+      "t": 196.800002,
+      "scene": "/publication",
+      "start": "185.69",
+      "caption": "掲載中になった月から、請求の対象に",
+      "over": []
+    },
+    {
+      "target": 201.4,
+      "t": 201.399999,
+      "scene": "title",
+      "start": "200.15",
+      "caption": "掲載中になった月から、請求の対象に",
+      "over": []
+    },
+    {
+      "target": 207.2,
+      "t": 207.199992,
+      "scene": "/issuance",
+      "start": "202.5",
+      "caption": "入金は日付と金額で。一部入金も追える",
+      "over": []
+    },
+    {
+      "target": 211.6,
+      "t": 211.600004,
+      "scene": "/issuance",
+      "start": "202.5",
+      "caption": "入金は日付と金額で。一部入金も追える",
+      "over": []
+    },
+    {
+      "target": 215.8,
+      "t": 215.80001,
+      "scene": "/issuance",
+      "start": "202.5",
+      "caption": "督促した相手には、二度掛けない",
+      "over": []
+    },
+    {
+      "target": 218,
+      "t": 217.999995,
+      "scene": "/issuance",
+      "start": "202.5",
+      "caption": "督促した相手には、二度掛けない",
+      "over": []
+    },
+    {
+      "target": 224,
+      "t": 223.999994,
+      "scene": "title",
+      "start": "220.1",
+      "caption": "裏側はすべて、AIとシステムが。",
+      "over": []
+    },
+    {
+      "target": 229.8,
+      "t": 229.800008,
+      "scene": "title",
+      "start": "227.91",
+      "caption": "裏側はすべて、AIとシステムが。",
+      "over": []
+    }
+  ]
+}

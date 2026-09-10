@@ -1,0 +1,77 @@
+{
+  "errors": [],
+  "samples": [
+    {
+      "target": 25.6,
+      "t": 25.6,
+      "scene": "/list-build",
+      "start": "19.31",
+      "caption": "情報の取得と整理は、すべて自動",
+      "over": []
+    },
+    {
+      "target": 46,
+      "t": 45.999999,
+      "scene": "/list-build",
+      "start": "19.31",
+      "caption": "情報の取得と整理は、すべて自動",
+      "over": []
+    },
+    {
+      "target": 65.2,
+      "t": 65.199997,
+      "scene": "/form-outreach",
+      "start": "63.44",
+      "caption": "といあわせフォームも、文面とURLはAIが用意。投稿は担当者",
+      "over": []
+    },
+    {
+      "target": 68.6,
+      "t": 68.6,
+      "scene": "/form-outreach",
+      "start": "63.44",
+      "caption": "といあわせフォームも、文面とURLはAIが用意。投稿は担当者",
+      "over": []
+    },
+    {
+      "target": 120.5,
+      "t": 120.500001,
+      "scene": "/outreach",
+      "start": "114.33",
+      "caption": "候補日をそのまま送信",
+      "over": []
+    },
+    {
+      "target": 211.6,
+      "t": 211.600004,
+      "scene": "/issuance",
+      "start": "202.5",
+      "caption": "候補日をそのまま送信",
+      "over": []
+    },
+    {
+      "target": 214.8,
+      "t": 214.799999,
+      "scene": "/issuance",
+      "start": "202.5",
+      "caption": "候補日をそのまま送信",
+      "over": []
+    },
+    {
+      "target": 216.7,
+      "t": 216.700006,
+      "scene": "/issuance",
+      "start": "202.5",
+      "caption": "督促した相手には、二度掛けない",
+      "over": []
+    },
+    {
+      "target": 218.8,
+      "t": 218.799999,
+      "scene": "/issuance",
+      "start": "202.5",
+      "caption": "督促した相手には、二度掛けない",
+      "over": []
+    }
+  ]
+}

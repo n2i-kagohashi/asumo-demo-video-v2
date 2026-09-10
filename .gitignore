@@ -1,0 +1,4 @@
+# ローカル確認用キャプチャ。検証ログ(JSON)は残す。
+_docs/qa/*.png
+_docs/qa/*.jpg
+__pycache__/

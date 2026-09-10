@@ -1,0 +1,113 @@
+/* v1の実機UIを保ちながら、1操作ずつ見切れずに見せる編集レイヤー。 */
+.frame > .scene:not(.full){left:248px}
+.scene{transition:opacity .3s ease;transform:none!important}
+.frame .scene.full{background:var(--em-900)}
+#chapcard{display:none!important}
+.v2-title .tcard{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:90px;text-align:center;color:white;background:linear-gradient(130deg,#0A4739,#0C5646)}
+.tcard-brand{font-size:20px;letter-spacing:.28em;font-weight:800;color:var(--em-200);margin-bottom:30px}
+.tcard-title{font-size:43px;line-height:1.8;max-width:1200px;margin:0;font-weight:700;letter-spacing:.02em}
+.title-line{position:absolute;left:130px;right:130px;top:330px}
+.v2-title[data-row="1"] .tcard-brand{position:absolute;top:235px}
+.v2-title .et-word span{animation:none!important;opacity:1!important;transform:none!important;filter:none!important}
+.v2-title .et-rule{animation:none!important;transform:none!important;opacity:1!important}
+.v2-title .et-sub{animation:none!important;opacity:1!important;transform:none!important}
+.v2-title .end-title{position:relative;inset:auto;opacity:1!important;transform:none!important}
+.edited .page{padding:20px 28px!important}
+.edited .container{max-width:none!important;padding:0!important}
+.edited .page-head{margin-bottom:18px}
+.edited .page-head h1{font-size:24px}
+.edited .page-head .meta{font-size:12px;max-width:950px}
+.edited .panel{padding:20px;margin-bottom:18px}
+.edited .panel h2{margin-bottom:12px;font-size:17px}
+.edited .panel.p0{padding:0}
+.v2-slot{position:absolute;left:28px;right:28px;top:174px}
+.v2-two{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:22px;align-items:start}
+.v2-two > *{min-width:0}
+.v2-two .tbl{font-size:12px}
+.v2-two .tbl td{white-space:normal;word-break:break-word}
+.v2-two .panel .panel{padding:14px}
+.v2-two .field{margin-bottom:10px}
+.v2-two .type{font-size:14px}
+.conditions-compact{max-height:470px;overflow:hidden}
+.conditions-compact .flt-section{margin:5px 0}
+.result-list .tbl td{white-space:normal;font-size:13px}
+.result-list .tbl tbody tr{height:120px}
+.form-compact{grid-template-columns:minmax(0,1fr) 390px!important;gap:18px!important}
+.form-compact .panel{padding:16px}
+.form-compact .tbl{font-size:12px}
+.form-compact .tbl td{white-space:normal;word-break:break-word}
+.form-compact .field{margin-bottom:8px}
+.form-compact .ta{min-height:90px!important}
+.form-output{position:absolute;top:174px;left:28px;width:680px;max-height:460px;overflow:hidden}
+.form-output h2{font-size:16px!important;margin-bottom:5px!important}
+.form-output h3{font-size:14px;margin:6px 0}
+.form-output .field{margin-bottom:10px}
+.form-output .ta{min-height:70px!important;font-size:13px}
+.v2-cockpit{border-radius:10px;overflow:hidden}
+.v2-cockpit .app-body{padding:0}
+.v2-cockpit .cockpit{grid-template-columns:minmax(0,.85fr) minmax(0,1fr) minmax(0,1.15fr);gap:12px;align-items:start}
+.v2-cockpit .app-top,.v2-cockpit .app-header{display:none}
+.v2-cockpit .blk-b{padding:12px}
+.v2-cockpit .co-name h3{font-size:15px}
+.v2-cockpit .dial-row{flex-wrap:wrap}
+.v2-cockpit .dial-row .dial-num{width:100%}
+.v2-cockpit .tabbar{flex-wrap:wrap}
+.v2-cockpit .tab-panel{padding:12px}
+.v2-cockpit .tab-panel > div[style*="grid-template-columns"]{display:flex!important;flex-wrap:wrap}
+.v2-cockpit .tab-panel .note{font-size:12px}
+.v2-cockpit .pickset{gap:5px}
+.v2-cockpit .pick{font-size:12px}
+.v2-cockpit .in-foot{margin-top:16px}
+.v2-cockpit .hear-sec{margin:8px 0;padding:10px}
+.v2-cockpit .hf{margin:6px 0}
+.v2-cockpit .hf .v{font-size:13px}
+.edited[data-nav="/teleapo"] .page-head .meta{display:none}
+.edited[data-nav="/teleapo"] .page-head{margin-bottom:10px}
+.edited[data-nav="/minutes2"] .m2-sec{margin-top:10px}
+.edited[data-nav="/minutes2"] .m2-sec h3{font-size:15px}
+.edited[data-nav="/minutes2"] #thanks .ta{min-height:120px!important}
+.edited[data-nav="/minutes2"] .m2-live{width:auto}
+.edited[data-nav="/issuance"] .payment-panel,.edited[data-nav="/issuance"] .dunning-panel{position:absolute;left:60px;right:60px;top:255px;background:white}
+.edited[data-nav="/issuance"] .payment-panel .field,.edited[data-nav="/issuance"] .dunning-panel .field{min-width:180px}
+.edited[data-nav="/issuance"] .dunning-panel .ta{min-height:64px}
+.edited .toast{top:112px;z-index:60;max-width:calc(100% - 60px);left:30px;right:auto}
+.edited .toast .banner{font-size:13px;padding:10px 16px}
+.contract-paper{padding:28px 40px 95px!important}
+.contract-paper .fc{max-height:650px;overflow:hidden;max-width:1080px}
+.contract-paper .paper{max-height:600px;overflow:hidden}
+.deck-page{position:absolute;inset:0;background:white}
+.deck-page img{width:1440px;height:810px;object-fit:contain;display:block}
+.deck-label{position:absolute;right:26px;bottom:27px;background:#0C5646;color:white;border-radius:30px;padding:6px 18px;font-size:13px}
+.overview-board{padding:10px 12px}
+.overview-board .eb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.overview-board .eb{display:flex;align-items:center;gap:12px;border-radius:8px;font-size:18px;color:var(--em-900);background:white;border:1px solid var(--n-200);padding:20px;opacity:0}
+.overview-board .eb i{font-style:normal;color:var(--em-500);font-weight:700}
+.overview-board .eb.in{opacity:1}
+.overview-board .eb.talk{background:var(--co-50);color:var(--co-700);border-color:var(--co-200)}
+.sidebar-focus{position:absolute;left:-236px;top:150px;width:218px;height:560px;pointer-events:none}
+.stage:has(.scene.on .overview-board) #sb .sb-item:not(:has(.sb-step)){display:none}
+.stage:has(.scene.on .overview-board) #sb .sb-item[data-href="/list-import"]{display:none}
+.stage:has(.scene.on .overview-board) #sb .sb-group-title,.stage:has(.scene.on .overview-board) #sb .sb-cat{display:none}
+.stage:has(.scene.on .overview-board) #sb .sb-nav{padding-top:20px}
+.stage:has(.scene.on .overview-board) #sb .sb-item{margin-bottom:9px}
+.schedule-grid .panel{padding:18px}
+.schedule-grid .field{margin-bottom:8px}
+.schedule-grid .ta{font-size:12px!important}
+.picker-wrap.in{display:flex!important;align-items:center;justify-content:center;padding-bottom:55px}
+.picker-wrap .picker-card{border:6px solid #24312e;border-radius:32px;box-shadow:0 20px 70px #0a473925;padding:34px 26px;width:400px}
+.picker-slot.on{border-color:#0071e3;background:#e8f1fe;font-weight:600}
+.frame > .scene.full .end-board .eb-grid{display:grid;grid-template-columns:repeat(3,1fr);max-width:1080px;gap:12px}
+.frame > .scene.full .end-board .eb{font-size:20px;padding:18px 20px;justify-content:flex-start}
+.frame > .scene.full .end-board .eb-h{font-size:24px}
+.frame > .scene.full .end-board .eb-note{font-size:22px;margin-top:22px}
+.show.in.v2-two{display:grid!important}
+@media(max-width:650px){
+ .wrap{padding:12px;max-width:100%;grid-template-columns:minmax(0,1fr)}
+ .wrap>*,.player,.stage-wrap,.masthead,.ribbon{min-width:0;max-width:100%}
+ .masthead .meta{display:flex;flex-wrap:wrap;white-space:normal;gap:8px}
+ .brand{gap:8px;flex-wrap:wrap}.brand h1{font-size:15px}
+ .ctl-row{flex-wrap:wrap;gap:6px}.ctl-row .now{min-width:0;flex-basis:100%}
+ .ribbon{overflow:hidden}.ribbon .step{min-width:0}
+ .hints{flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){.scene,.cue,.show,.eb{transition:none!important;animation:none!important}}
