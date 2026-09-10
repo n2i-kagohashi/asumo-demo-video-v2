@@ -1,0 +1,8 @@
+**
+!Dockerfile
+!server.mjs
+!index.html
+!narration-bookends.wav
+!robots.txt
+!deck/
+!deck/**

@@ -6,13 +6,17 @@ body{font-family:'Inter','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;b
 </style></head><body><main class="wrap">
 <h1>ASUMO 動画 v2 — デプロイ引き継ぎ</h1>
 <div class="callout ok"><b>ビルドは不要です。</b> リポジトリ直下を静的サイトとして配信すれば、<code>index.html</code> から再生できます。</div>
-<nav class="toc"><b>目次</b><ol><li><a href="#source">取得元</a></li><li><a href="#settings">配信設定</a></li><li><a href="#check">公開後の確認</a></li></ol></nav>
+<nav class="toc"><b>目次</b><ol><li><a href="#source">取得元</a></li><li><a href="#fly">現在のFly.io公開</a></li><li><a href="#settings">静的ホスティングの設定</a></li><li><a href="#check">公開後の確認</a></li></ol></nav>
 <h2 id="source">取得元</h2>
 <p>新作専用リポジトリ: <a href="https://github.com/n2i-kagohashi/asumo-demo-video-v2">github.com/n2i-kagohashi/asumo-demo-video-v2</a></p>
 <pre>git clone https://github.com/n2i-kagohashi/asumo-demo-video-v2.git
 cd asumo-demo-video-v2</pre>
 <p>公開中の旧版 <code>n2i-kagohashi/asumo-demo</code> とは別リポジトリです。旧版のブランチ・GitHub Pages設定は変更しないでください。</p>
-<h2 id="settings">配信設定</h2>
+<h2 id="fly">現在のFly.io公開</h2>
+<p>アプリ名は <code>asumo-video-v2-n2i</code>、リージョンは東京です。BASIC認証情報はGitHubへ保存せず、Fly Secretsで管理します。</p>
+<pre>fly secrets set BASIC_AUTH_USER=... BASIC_AUTH_PASS=... --stage -a asumo-video-v2-n2i
+fly deploy --remote-only --ha=false -a asumo-video-v2-n2i</pre>
+<h2 id="settings">静的ホスティングの設定</h2>
 <p>任意の静的ホスティングで、次の設定を使います。</p>
 <ul><li>Production branch: <code>main</code></li><li>Build command: なし</li><li>Publish directory: リポジトリ直下（<code>.</code>）</li><li>入口: <code>/index.html</code></li></ul>
 <div class="callout warn"><code>narration-bookends.wav</code> は約44.6MBです。音声シークのため、HTTP Rangeリクエストに <code>206 Partial Content</code> を返すホスティングを使用してください。</div>
